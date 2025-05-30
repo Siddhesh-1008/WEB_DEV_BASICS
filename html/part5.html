@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <!-- 
+    A form in HTML is a special area on a web page where users can enter information and send it to the website.
+    How it works:
+    A form is created using the <form> tag.
+        Inside the form, you can have text boxes, buttons, checkboxes, etc.
+        When you click the submit button, the information you entered is sent to the website
+
+        A form is a way for users to give information to a website.
+     -->
+        <!-- 
+     The action attribute in a form tells the browser where to send the information when you submit the form.
+    I t is written inside the <form> tag. 
+        The action attribute decides where your form data goes after you click the submit button.
+        -->
+        <form action="./part4.html">
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <button type="submit">Submit</button>
+
+        </form>
+
+        <!-- 
+    In easy words,
+    label in HTML is used to give a name or description to a form input, like a text box or a checkbox. 
+    It helps users understand what information they should enter. When you click on the label, it also selects or focuses the related input box, making forms easier to use.
+    -->
+
+    <!-- 
+    id
+    id is a special name you give to one element on a page.
+    It must be unique (only one element can have that id).
+    It helps you find or style that one specific element.
+
+    class is a name you can give to one or many elements.
+    Many elements can share the same class.
+    It helps you style or find a group of elements together.
+     -->
+
+        <form action="./part4.html">
+
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <button type="submit">Submit</button>
+            <label for="id101">
+                <!-- WHENVER USER SELECTS ANY OF THESE RADIO BUTTONS, THE VALUE WILL BE SENT TO THE SERVER -->
+                <input type="radio" value="class X" id="id101"
+                    name="class">CLASS X
+            </label>
+
+            <label for="id102">
+                <input type="radio" value="class XI" id="id102"
+                    name="class">CLASS XI
+            </label>
+        </form>
+
+        <form>
+        <!-- N CHECKBOXES -->
+         <label for="phy">
+            <input type="checkbox"  value="chem" name="subject" id="101">
+            MATHS
+         </label>
+        <br>
+         <label for="chem">
+            <input type="checkbox"  value="chem" name="subject" id="102">
+            CHEMISTRY
+         </label>
+         <br>
+         <label for="bio">
+            <input type="checkbox"  value="bio" name="subject" id="103">
+            BIOLOGY
+         </label>
+         <br>
+         <textarea name="inforamtion" id="104"
+          cols="30" rows="4" placeholder="enter your information"></textarea>
+
+        </form>
+
+       
+
+    </body>
+</html>

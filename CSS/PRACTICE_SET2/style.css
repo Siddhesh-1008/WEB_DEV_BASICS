@@ -1,0 +1,16 @@
+*{
+    font-family: 'Times New Roman';
+}
+
+#heading{
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* IF WE APPLY CSS PROPERTY TO OUTER BOX THEN IT WILL APPLY TO INNER BOX TOO */
+#outer-box{
+font-size: 25px;
+}
+
+#inner-box{
+font-size: 10px;}

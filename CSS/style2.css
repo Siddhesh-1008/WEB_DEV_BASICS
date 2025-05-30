@@ -1,0 +1,35 @@
+/* ALIGNING TEXT TO CENTER, RIGHT, LEFT */
+
+#para0{
+    text-align: center;
+    color:red;
+}
+
+#para1{
+    text-align: center;
+    color:red;
+}
+
+#para2{
+    text-align: right;
+    color:blue;
+}
+
+#para3{
+    text-align: left;
+    color:green;
+}
+
+
+/* DIFFERENT TEXT DECORATION APPLICED TO TEXT AS WELL AS DIFFERENT COLOR */
+h1{
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: rgb(55, 153, 245) wavy line-through;
+}
+
+a{
+    /* text-decoration: none; */
+    text-decoration: red dotted underline;
+
+}

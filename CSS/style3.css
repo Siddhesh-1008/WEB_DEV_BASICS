@@ -1,0 +1,56 @@
+/* font-weight IS A PROPERTY THAT IS USED TO SET THE WEIGHT OF THE TEXT BE IT NORMAL BOLD BOLDER LIGHTER OR .. */
+/* font-weight: 100-900 100 IS LIGHTER AND 900 IS BOLDER AND 400 IS NORMAL */
+
+h1{
+    font-weight: bold;
+}
+
+h2{
+    font-weight: bolder;
+}
+
+/* IF PARTICULAR FONT FAMILY IS NOT AVAILABLE AT BROWSER THEN USE OTHER FONT FAMILY */
+h3{
+    font-family: 'Book Antiqua', sans-serif, cursive;
+    font-weight: darker ;
+}
+
+/* FONT FAMILY IS A PROPERTY THAT IS USED TO SET THE FONT OF THE TEXT */
+h4{
+    font-family: 'Book Antiqua';
+    font-weight:lighter;
+}
+
+
+/* FONT SIZE IS A PROPERTY THAT IS USED TO SET THE SIZE OF THE TEXT 1INCH=96PX*/
+/* TO CHECK THE FONT SIZE JUST INSPECT AND CHECK IT */
+#para1{
+    font-size: 32px;
+}
+
+#para2{
+    font-size: 20px;
+}
+
+/* LINE HEIGHT IS A PROPERTY THAT IS USED TO SET THE LINE HEIGHT OF THE TEXT */
+/* WE CAN CHANGE LINE HEIGHT TO NORMAL OR ANY OTHER VALUE */
+/* TEXT TRANSFORM WE CAN TEXT TO UPPERCASE OR LOWERCASE OR CAPITALIZE */
+#para3{
+    line-height: 20px;
+    line-height: normal;
+    text-transform: uppercase;
+    text-transform: lowercase;
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
+
+
+
+
+

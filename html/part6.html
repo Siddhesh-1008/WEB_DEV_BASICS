@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+
+        <h1>Registration Form</h1>
+
+        <form action="./part4.html">
+
+            <input type="text" placeholder="Enter your name">
+            <input type="password" placeholder="Enter your password">
+            <p>Select your class</p>
+            <label for="id101">
+                <!-- WHENVER USER SELECTS ANY OF THESE RADIO BUTTONS, THE VALUE WILL BE SENT TO THE SERVER -->
+                <input type="radio" value="class X" id="id101"
+                    name="class">CLASS X
+            </label>
+
+            <br> <br>
+            <label for="id102">
+                <input type="radio" value="class XI" id="id102"
+                    name="class">CLASS XI
+            </label>
+            <br> <br>
+
+            <p>Select your subjects</p>
+            <label for="phy">
+                <input type="checkbox" value="chem" name="subject" id="101">
+                MATHS
+            </label>
+            <br>
+            <label for="chem">
+                <input type="checkbox" value="chem" name="subject" id="102">
+                CHEMISTRY
+            </label>
+            <br>
+            <label for="bio">
+                <input type="checkbox" value="bio" name="subject" id="103">
+                BIOLOGY
+            </label>
+
+            <p>Select your city</p>
+            <select name="city" id="105">
+                <option value="delhi">DELHI</option>
+                <option value="mumbai">MUMBAI</option>
+                <option value="kolkata">KOLKATA</option>
+                <option value="chennai">CHENNAI</option>
+            </select>
+            <br> <br>
+            <textarea name="inforamtion" id="104"
+                cols="30" rows="4"
+                placeholder="enter your information"></textarea>
+
+            <br> <br>
+            <button type="submit">Submit</button>
+        </form>
+
+        
+    </body>
+</html>

@@ -1,0 +1,67 @@
+/* IN CSS THE ONE WHICH IS WRITTEN LAST IS APPLIED FIRST */
+/* FOREGROUND  FOR CONTENT */
+h3{
+    color:burlywood
+}
+
+/* BACKGROUND FOR BACKGROUND OF THE CONTENT */
+p{
+    background-color: rgb(108, 17, 81);
+}
+
+/* BUTTON */
+button{
+    color:rgb(86, 217, 247);
+    background-color: rgb(179, 120, 49);
+  
+}
+/* BODY */
+body{
+    background-color:black;
+}
+
+/* RGB MEANS HOW MUCH RED GREEN AND BLUE IS USED IN THE COLOR AND THEN COMBINE THEM TO FORM NEW COLOR */
+/* GO TO COLOR PICKER OR COLOR PALLET TO GET THE COLOR CODE */
+h4{
+    color:rgb(255,0,0);
+    color:rgb(0,255,0);
+    color:rgb(0,0,255);
+    color:rgb(255,255,0);
+    color:rgb(255,0,255);
+    color:rgb(0,255,255);
+    color:rgb(255,255,255);
+    color:rgb(0,0,0);
+    color:rgb(128,128,128);
+    color:rgb(128,0,0);
+    color:rgb(128,0,128);
+
+    /* HEXADECIMAL MEANS 0-9 AND A-F */
+    color:#ff0000;
+    color:#00ff00;
+    color:#0000ff;
+    color:#ffff00
+
+}
+
+/* UNIVERSAL SELECTOR APPLIES TO ALL THE ELEMENTS */
+*{
+    color:rgb(226, 130, 130);
+}
+
+/* HEADING SELECTOR */
+/* HEADING WE APPPLIED UNIQUE IDS TO EVERY ELEMENT NO SAME IDS TO EACH ELEMENT */
+/* HEADING ONLY FOR PARAGRAPH 1 */
+#para1{
+    color:rgb(0, 119, 255);
+}
+
+/* PARAGRAPH ONLY FOR PARAGRAPH 2 */
+#para2{
+    color:rgb(0,255,255);
+}
+
+/* CLASS SELECTOR IT CAN BE SAME CLASS NAME FOR MULTIPLE ELEMENTS BASICALLY IT IS USED FOR GROUPING ELEMENTS TOGETHER */
+.heading5{
+    color:rgb(255,0,0);
+}
+
