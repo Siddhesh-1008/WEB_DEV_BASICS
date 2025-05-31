@@ -1,0 +1,43 @@
+/* EVERY CONTENT HAS BOX MODEL */
+/* IF WIDTH,HEIGHT IS NOT SET THEN IT WILL TAKE THE DEFAULT WIDTH AND HEIGHT OF THE DIV */
+/* WIDTH AND HEIGHT ARE THE WIDTH AND HEIGHT OF THE CONTENT I.E "HELLO WORLD AND THIS IS A DIV" OF THE DIV */
+/* BORRDER LEVEL WE CAN ALSO SET THE BORDER WIDTH, BORDER COLOR, BORDER STYLE */
+div{
+    height: 200px;
+    width: 200px;
+    background-color: pink; 
+    border-style: solid;
+    border-color: red;
+    text-align: center;
+    
+}
+
+/* BORRDER LEVEL WE CAN ALSO SET THE BORDER WIDTH, BORDER COLOR, BORDER STYLE */
+/* BORDER STYLE CAN BE SET TO SOLID, DASHED, DOTTED, DOUBLE, GROOVE, RIDGE, INSET, OUTSET BASICALLY SHOWS BOX MODEL BORDER IN DIFFERENT STYLES */
+/* TEXT ALIGN IS USED TO ALIGN THE CONTENT INSIDE THE BOX MODEL */
+/* BORDER SHORTHAND IS USED TO SET THE BORDER WIDTH, BORDER STYLE, BORDER COLOR IN ONE LINE */
+h1{
+
+    height: 100px;
+    width: 100px;
+    background-color:cyan;
+    /*
+    border-width: 2px;
+    border-style:dotted; 
+    border-color: rgb(0, 0, 0);
+    */
+    border:2px dotted black;
+    text-align: center;
+
+}
+
+/* BORDER RADIUS IS USED TO ROUND THE CORNERS OF THE BOX MODEL AND REMEMBER IF HEIGHT AND WIDTH IS SAME THEN WE SET BORDER RADIUS TO 50% THEN IT WILL BECOME A CIRCLE*/
+.box{
+    height: 200px;
+    width: 200px;
+    background-color: pink; 
+    border-style: solid;
+    border-color: red;
+    border-radius:10px;
+
+}

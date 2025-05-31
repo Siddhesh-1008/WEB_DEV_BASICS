@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* IF U GIVE WIDTH TO THE PARENT IF U WONT GIVE WIDTH TO THE CHILD THEN THE CHILD WILL TAKE 100% OF THE WIDTH OF THE PARENT */
+/* PERCENTAGE IS ALWAYS RELATIVE TO THE PARENT MEANS IF U GIVE 100% WIDTH TO THE PARENT THEN THE CHILD WILL TAKE 100%(THAT U GIVE) OF THE WIDTH OF THE PARENT */
+#box1{
+    width: 200px;
+    height: 100px;
+    font-size: 10px;
+    background-color:green;
+}
+
+/* PERCENTAGE IS ALWAYS RELATIVE TO THE PARENT MEANS IF U GIVE 100% WIDTH TO THE PARENT THEN THE CHILD WILL TAKE 50%(THAT U GIVE) OF THE WIDTH OF THE PARENT  SAME FOR MARGIN LEFT*/
+/* em is relative to the font size of the parentelement HERE 2em MEANS 2 TIMES THE FONT SIZE OF THE PARENT ELEMENT */
+/* BUT FOR WIDTH IT CONSIDERS ITS ELEMENT FONT SIZE ITSELF MEANS BOX2 FONT SIZE IS 2em THAT MEANS 2*10PX=20PX AND WIDTH IS 5em THAT MEANS 5*20PX=100PX */
+/* rem is relative to the font size of the root element means 1rem=16px FOR BODY THEN 2rem=32px FOR BOX2*/
+#box2{
+    height: 60px;
+    width: 50%;
+    font-size: 2em;
+    width: 5em;
+    margin-left: 10%;
+    background-color:rgb(234, 255, 0);
+}
+
+/* vh refers to the height of the viewport means 100vh=100% OF THE HEIGHT OF THE BROWSER WINDOW */
+/* vw refers to the width of the viewport means 100vw=100% OF THE WIDTH OF THE BROWSER WINDOW */
+#box3{
+    height: 60vh;
+    width: 60vw;
+    background-color:rgb(234, 255, 0);
+}

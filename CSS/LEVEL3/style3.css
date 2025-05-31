@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height:1000px;
+   
+}
+h1{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+hr{
+    border: 1px solid rgb(235, 12, 12);
+}
+
+div{
+    height: 100px;
+    width: 100px;
+    margin-top: 10px;
+    border: 2px solid black;
+    background-color:lightblue;
+    display: inline-block;
+}
+
+/* STATIC POSITION IS DEFAULT POSITION OF THE ELEMENTS WE CANNOT MOVE IT FROM ITS POSITION THAT IS LEFT RIGHT TOP BOTTOM */
+#box1{
+    position: static;
+}
+
+/* RELATIVE POSITION IS THE POSITION OF THE ELEMENTS RELATIVE TO ITS NORMAL POSITION */
+/* MEANS WE CAN NOW MOVE BOX2 ELEMENT FROM ITS NORMAL POSITIION BY USING TOP LEFT RIGHT BOTTOM PROPERTIES */
+/* IF WE MOVE FROM TOP THEN IT WILL MOVE 20 PX FROM BROWSER BOUNDARY */
+#box2{
+    position: relative;
+    top: 20px;
+    left: 50px;
+}
+
+/*  ABSOLUTE POSITION IS THE POSITION OF THE ELEMENTS RELATIVE TO ITS CLOSESTPARENT ELEMENT HERE CLOSESTPARENT IS BODY */
+/* USED FOR OVERLAPPING ELEMENTS MEANS IF THE ELEMENT MOVES IT MOVES FROM ITS DOCUMENT FLOW BUT IN REALITIVE IT IS NOT LIKE THAT */
+/* IN REALTIVE IF WE MOVE ELEMENT FROM TOP IT MOVES FROM TOP AND LEAVE THE GAP 
+BUT IN ABSOLUTE IF WE MOVE FROM TOP IT MOVES BUT NOT LEAVE THE GAP AND OTHER ELEMENTS GET SHIFTED */
+/* SEE IN BELOW CODE BOX5 IS ABSOLUTE AND BOX6 IS RELATIVE THUS BOX 5 GET MOVES DOWN AND BOX6 GETS SHIFTED */
+/* refer https://www.youtube.com/watch?v=9BlNJFIMUrY */
+#box5{
+    position: absolute;
+    top: 100px;
+}
+
+/*  FIXED POSITION IS THE POSITION OF THE ELEMENTS RELATIVE TO THE BROWSER WINDOW */
+/* MEANS IF WE MOVE FROM TOP IT MOVES FROM TOP AND LEAVE THE GAP */
+/* IT IS NOT AFFECTED BY THE SCROLLING OF THE PAGE */
+/* IT IS MAINLY USED FOR FOOTERS  */
+#box7{
+    display: block;
+    position: fixed;
+    
+    width: 100vw;
+    bottom: 0px;
+
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+/*  STICKY POSITION IS THE POSITION OF THE ELEMENTS RELATIVE TO THE ITS PARENT CONTAINER */

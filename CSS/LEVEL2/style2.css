@@ -1,0 +1,34 @@
+/* PADDING IS USED TO GIVE SPACE  BETWEEN CONTENT AND BOX MODEL */
+/* PADDING IS SET IN THE INSIDE OF THE BOX MODEL AND IT IS SET IN THE FOUR SIDES OF THE BOX MODEL*/
+/* U CAN INSPECT THE BOX MODEL AND SEE PADDING(FROM LEFT RIGH TOP BOTTOM) */
+
+/* MARGIN IS USED TO GIVE SPACE BETWEEN DIFFERNT DIV BOX MODEL AND OTHER BOX MODEL */
+/* MARGIN IS SET THE OUTSIDE OF THE BOX MODEL AND IT IS SET IN THE FOUR SIDES OF THE BOX MODEL */
+/* MARGIN SHORTHAND IS USED TO SET THE MARGIN IN THE FOUR SIDES OF THE BOX MODEL IN ONE LINE THAT IS TOP RIGHT BOTTOM LEFT */
+div{
+    height: 200px;
+    width: 200px;
+    background-color: pink;
+    border-style: solid;
+    border-color: red;
+    border-radius: 10px;
+    padding-left:25px;
+    padding-right:25px;
+    padding-top:25px;
+    padding-bottom:25px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    margin-right: 50px;
+    /* margin: 5px 15px 25px 14px; */
+}
+
+/* PADIDNG SHORTHAND IS USED TO SET THE PADDING IN THE FOUR SIDES OF THE BOX MODEL IN ONE LINE */
+/* AND IT IS SET IN CLOCKWISE DIRECTION THAT IS TOP RIGHT BOTTOM LEFT */
+p{
+    height: 150px;
+    width: 150px;
+    background-color: pink;
+    border: 2px dotted red;
+    padding:5px 10px 5px 10px;
+}
