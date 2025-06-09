@@ -1,0 +1,80 @@
+/* WE APPLY FLEX ON PARENT CONTAINER TO MAKE THE FLEX ITEMS FLEXIBLE */
+/* 
+
+FLEX BOX IS USED TO ARRANGE THE ELEMENTS IN A ROW OR COLUMN IN SINGLE DIV
+FLEX ITEM ARE THE ELEMENTS INSIDE THE FLEX BOX
+FLEX CONTAINER IS THE ELEMENT THAT CONTAINS THE FLEX ITEMS
+MAIN AXIS IS THE AXIS ALONG WHICH THE FLEX ITEMS ARE ARRANGED IN HORIZONTAL OR VERTICAL
+CROSS AXIS IS THE AXIS PERPENDICULAR TO THE MAIN AXIS  IN VERTICAL
+
+
+ */
+
+ body{
+    text-align: center;
+ }
+
+ div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(188, 42, 42);
+    display: inline-block;
+    
+ }
+
+
+ /*
+ BY WRITING DISPLAY FLEX IN THE CONTAINER
+ WE CAN USE FLEX-DIRECTION PROPERTIES TO CHANGE THE DIRECTION OF THE FLEX ITEMS
+ FLEX ITEMS MUST BE ALWAYS PRESENT/FIT IN THE FLEX BOXCONTAINER
+ 
+ WE CAN USE FLEX-WRAP TO WRAP THE FLEX ITEMS
+ WE CAN USE FLEX-FLOW TO COMBINE FLEX-DIRECTION AND FLEX-WRAP
+ WE CAN USE JUSTIFY-CONTENT TO ALIGN THE FLEX ITEMS IN THE CONTAINER
+ WE CAN USE ALIGN-ITEMS TO ALIGN THE FLEX ITEMS IN THE CONTAINER
+ WE CAN USE ALIGN-CONTENT TO ALIGN THE FLEX ITEMS IN THE CONTAINER
+ */
+
+ #container{
+    width: 800px;
+    height: 200px;
+    border: 2px solid rgb(4, 0, 0);
+    display: flex;
+    /* HERE MAIN AXIS IS HORIZONTAL AND CROSS AXIS IS VERTICAL FROM LEFT TO RIGHT*/
+    /* flex-direction: row; */
+
+    /* FROM RIGHT TO LEFT */
+    /* flex-direction: row-reverse; */
+
+    /* FROM TOP TO BOTTOM MAIN AXIS IS VERTICAL AND CROSS AXIS IS HORIZONTAL */
+    /* flex-direction: column; */
+
+    /* FROM BOTTOM TO TOP */
+    flex-direction: column-reverse;
+    
+ }
+
+ #box1{
+    background-color: rgb(197, 115, 115);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box2{
+    background-color: rgb(146, 146, 224);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box3{     
+    background-color: rgb(135, 206, 135);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box4{
+    background-color: rgb(234, 234, 132);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box5{
+    background-color: rgb(200, 80, 200);
+    border: 2px solid rgb(4, 0, 0);
+ }

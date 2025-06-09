@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+WE HAVE APPLIED SPINANIMATION TO THE LOADER ELEMENT
+*/
+.loader{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 20px solid #FFE66D;
+    animation-name: spinanimation;
+    animation-duration: 3s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+
+    
+}
+
+/* AT O% WE HAVE STARTED WITH RED COLOR AND THEN WE HAVE CHANGED THE COLOR TO GREEN AND THEN TO PURPLE AND THEN TO BLUE AND THEN TO RED AGAIN AND SO ON */
+/* TRANSFORM ROTATE IS USED TO ROTATE THE ELEMENT AND BORDER TOP IS USED TO CHANGE THE COLOR OF THE BORDER */
+@keyframes spinanimation{
+    0%{
+        transform: rotate(0deg);
+        border-top: 20px solid #177670;
+    }
+    25%{
+        transform: rotate(90deg);
+        border-top: 20px solid #e50202;
+    }
+    50%{
+        transform: rotate(180deg);
+        border-top: 20px solid purple;
+    }
+    75%{
+        transform: rotate(270deg);
+        border-top: 20px solid green;
+    }
+    100%{
+        transform: rotate(360deg);
+        border-top: 20px solid blue;
+    }
+    
+}

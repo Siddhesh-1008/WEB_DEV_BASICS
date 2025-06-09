@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+body{
+    height: 10000px;
+}
+
+/* 1st box 
+position: fixed; MEANS IT WILL BE FIXED TO THE SCREEN EVEN IF WE SCROLL THE PAGE
+RIGHT AND TOP ARE THE PROPERTIES OF THE BOX THAT ALLOWS U TO MOEV BOX TO RIGHT SIDE AND FROM TOP
+
+
+
+ */
+.container{
+    width: 100px;
+    height: 100px;
+    color: white;
+    border: 1px solid black;
+    background-size: cover;
+    background-image: url("photo_1.jpg");
+    position: fixed;
+    right: 0;
+    top: 20px;
+
+    
+  
+
+
+   
+}

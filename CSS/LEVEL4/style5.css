@@ -1,0 +1,92 @@
+/* 
+FLEX BOX IS USED TO ARRANGE THE ELEMENTS IN A ROW OR COLUMN IN SINGLE DIV
+FLEX ITEM ARE THE ELEMENTS INSIDE THE FLEX BOX
+FLEX CONTAINER IS THE ELEMENT THAT CONTAINS THE FLEX ITEMS
+MAIN AXIS IS THE AXIS ALONG WHICH THE FLEX ITEMS ARE ARRANGED IN HORIZONTAL OR VERTICAL
+CROSS AXIS IS THE AXIS PERPENDICULAR TO THE MAIN AXIS  IN VERTICAL
+ */
+ body{
+    text-align: center;
+ }
+
+div{
+    width: 50px;
+    height: 20px;
+    border: 1px solid rgb(188, 42, 42);
+    display: inline-block;
+    
+ }
+
+ /*
+ FLEX GROW AND SHRINK ARE USED ON PER FLEX ITEMS HERE BOX1,BOX2..
+
+ flex-grow is used to grow the particular flex item to acquire the extra space in the container
+ MEANS CONSTAINER HAVE MORE WIDTH THAN THE FLEX ITEMS THEN THE FLEX ITEMS WILL GROW TO ACQUIRE THE EXTRA SPACE IN THE CONTAINER
+
+ flex-shrink is used to shrink the particular flex item to acquire the extra space in the container 
+ MEANS CONSTAINER HAVE LESS WIDTH THAN THE FLEX ITEMS THEN THE FLEX ITEMS WILL SHRINK TO ACQUIRE THE EXTRA SPACE IN THE CONTAINER
+ 
+
+ */
+ #container{
+    width:2000px;
+    height: 200px;
+    border: 2px solid rgb(4, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+ }
+
+ #box1{
+    background-color: rgb(197, 115, 115);
+    border: 2px solid rgb(4, 0, 0);
+    flex-grow: 1;
+    
+ }
+
+ #box2{
+    background-color: rgb(146, 146, 224);
+    border: 2px solid rgb(4, 0, 0);
+    flex-grow: 1;
+ }
+
+ #box3{     
+    background-color: rgb(135, 206, 135);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box4{
+    background-color: rgb(234, 234, 132);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box5{
+    background-color: rgb(200, 80, 200);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box6{
+    background-color: rgb(157, 16, 16);
+    border: 2px solid rgb(4, 0, 0);
+ }
+ 
+ #box7{
+    background-color: rgb(131, 51, 184);
+    border: 2px solid rgb(4, 0, 0);
+ }
+ 
+ #box8{
+    background-color: rgb(37, 135, 140);
+    border: 2px solid rgb(4, 0, 0);
+    flex-shrink: 1;
+ }
+ 
+ #box9{
+    background-color: rgb(51, 184, 69);
+    border: 2px solid rgb(4, 0, 0);
+ }
+ 
+ #box10{
+    background-color: rgb(224, 224, 27);
+    border: 2px solid rgb(4, 0, 0);
+ }

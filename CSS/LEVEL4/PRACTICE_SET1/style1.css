@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+   
+}
+
+/* FIRST QUESTIONS */
+.menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+    
+       
+}
+
+ul{
+    background-color: black;
+}
+
+li{
+    list-style: none;
+    
+}
+
+a{
+    text-decoration: none;
+    color:rgb(219, 155, 18);
+    font-size: 20px;
+
+}
+
+/* SECOND QUESTION */
+/*
+BY DEFAULT DISPLAY FLEX ARRANGE FLEX ITEMS IN A ROW FROM LEFT TO RIGHT
+THEN WE USED JUSTIFY CONTENT CENTER TO CENTER THE FLEX ITEMS IN THE MAIN AXIS(HORIZONTAL)
+THEN WE USED ALIGN ITEMS CENTER TO CENTER THE FLEX ITEMS IN THE CROSS AXIS(VERTICAL)
+ALWAYS USE JUSTIFY CONTENT AND ALIGN ITEMS TO CENTER THE FLEX ITEMS IN THE CONTAINER
+ALIGN ITMES ARE USED FOR CROSS AXIS(VERTICAL)
+JUSTIFY CONTENT ARE USED FOR MAIN AXIS(HORIZONTAL)
+
+display: flex;
+flex-direction:row,row-reverse,col,col-reverse;
+WORKED ON MAIN AXIS(HORIZONTAL) IF ROW OR BYDEFUALT  AND FOR COLUMN JUSTIFY CONTENT WORKS FOR CROSS AXIS(VERTICAL)
+jussitfy-content:flex-start,flex-end,center,space-between,space-around,space-evenly
+
+ON MULTPLE ROWS 
+flex-wrap:wrap,nowrap;
+align-content:flex-start,flex-end,center,space-between,space-around,space-evenly;
+flex-shrink:0,1; or flex-grow:0,1; ON SINGLE FLEX ITEM
+
+
+
+
+
+
+
+*/
+
+
+
+*/
+.outside_container{
+    width: 500px;
+    height: 500px;
+    color: black;
+    background-color: rgb(230, 146, 146);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    
+    
+}
+
+.inside_container{
+    width: 120px;
+    height: 120px;
+    background-color: rgb(216, 25, 25);
+    padding: 10px 10px 10px 10px;
+}
+

@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+/* 
+transition-property:all is used to apply the transition to all the properties of the element
+transition-duration: 2s is used to apply the transition for 2 seconds
+transition-timing-function:steps(5) is used to apply the transition in 5 steps
+
+transform:scale(x) is used to scale the element based on the x value
+transform:rotate(x) is used to rotate the element based on the x value
+transform:translate(x,y) is used to move the element to the right or left or up or down based on the x and y values
+transform:skew(degree) is used to stretch the element from both corner ends 
+*/
+/* 
+WE APPLY ANIMATION TO THE ELEMENT HERE WE HAVE USED KEYFRAMES TO CREATE ANIMATION ON DIV ELEMENT
+ANIMATION NAME IS THE NAME OF THE ANIMATION
+ANIMATION DURATION IS THE TIME IT TAKES TO COMPLETE THE ANIMATION
+ANIMATION TIMING FUNCTION IS THE SPEED OF THE ANIMATION
+ANIMATION ITERATION COUNT IS THE NUMBER OF TIMES THE ANIMATION WILL RUN
+ANIMATION DIRECTION IS THE DIRECTION OF THE ANIMATION FROM START TO END AND BACK TO START BUT INFINITE WILL NOT RUN BACK TO START IT WILL GO FROM START TO END AND THEN AGAIN START TO END
+ANIMATION FILL MODE IS THE FILL MODE OF THE ANIMATION MEANS WHAT WILL BE THE COLOR OF THE ELEMENT AT THE START AND END OF THE ANIMATION
+ */
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    border: 3px solid black;
+    position: absolute;
+    animation-name: animationframe;
+    animation-duration: 2s;
+    /* 
+    linear with same speed from start to end
+    ease with slow start and end and fast middle
+    ease-in with slow start 
+    ease-out with slow end
+    ease-in-out with slow start and end 
+    cubic-bezier(x1,y1,x2,y2) is used to create a custom timing function means what speed will be there at differnet positions of the animation
+     */
+    animation-timing-function:cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    animation-iteration-count: 5;
+    /* animation-direction: alternate-reverse; */
+    
+    /* animation:animation-name duration timing-function delay itertion-count */
+    
+
+}
+
+/* 
+TMEPLATE ANIMATION IS USED TO CREATE ANIMATION ON THE ELEMENT
+ */
+/* @keyframes animationframe {
+    INTIAL STATE OF DIV
+    from{
+        top:0px;
+        left:0px;
+        background-color: red;
+    }
+
+    DESIRE STATE OF DIV
+    to{
+        top:0px;
+        left:500px;
+        background-color: blue;
+    }
+    
+} */
+
+
+@keyframes animationframe{
+    /* FROM STAGE */
+    0%{
+        top:0px;
+        left:0px;
+        background-color: rgb(221, 79, 79);
+    }
+    /* MIDDLE STAGE CAN ADD 25% 35% AND MANY MORE AND ADD CSS PROPERTY TO THE ELEMENT */
+    50%{
+        top:0px;
+        left:500px;
+        background-color: rgb(106, 106, 233);
+    }
+    /* TO STAGE */
+    100%{
+        top:0px;
+        left:500px;
+        background-color: rgb(195, 93, 25);
+    }
+
+}

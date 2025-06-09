@@ -1,0 +1,101 @@
+/* 
+FLEX BOX IS USED TO ARRANGE THE ELEMENTS IN A ROW OR COLUMN IN SINGLE DIV
+FLEX ITEM ARE THE ELEMENTS INSIDE THE FLEX BOX
+FLEX CONTAINER IS THE ELEMENT THAT CONTAINS THE FLEX ITEMS
+MAIN AXIS IS THE AXIS ALONG WHICH THE FLEX ITEMS ARE ARRANGED IN HORIZONTAL OR VERTICAL
+CROSS AXIS IS THE AXIS PERPENDICULAR TO THE MAIN AXIS  IN VERTICAL
+ */
+ body{
+    text-align: center;
+ }
+
+div{
+    width: 50px;
+    height: 20px;
+    border: 1px solid rgb(188, 42, 42);
+    display: inline-block;
+    
+ }
+
+ /* 
+ WRAP IS USED TO WRAP THE OVERFLOWING CONTAINERS TO THE NEXT LINE
+ IF WE ADD MORE CONTAINERS IN THE MAIN CONTAINER AND IF MAIN CONTAINER WIDTH IS LESS THAN THE CONTAINERS THEN THE CHILD CONTAINERS WILL BE MOVE OUT OF THE MAIN CONTANER
+ TO AVOID IT WE MAKE USE OF FLEX-WRAP PROPERTY THEN THE CHILD CONTAINERS WILL BE MOVE TO THE NEXT LINE
+ WRAP-REVERSE IS USED TO WRAP THE OVERFLOWING CONTAINERS TO THE PREVIOUS LINE
+
+ JUSTIFY-CONTENT IS USED ON SINGLE ROW AND IT IS USED TO ALIGN THE CONTAINERS IN THE MAIN CONTAINER
+ ALIGN-CONTENT IS USED ON MULTIPLE ROWS AND IT IS USED TO ALIGN THE CONTAINERS IN THE MAIN CONTAINER
+ ALIGN CONTENT CENTER IS USED TO CENTER THE MULTIPLE ROWS IN THE MAIN CONTAINER
+ ALIGN CONTENT FLEX START IS USED TO ALIGN THE CONTAINERS IN THE MAIN CONTAINER TO THE START
+ ALIGN CONTENT FLEX END IS USED TO ALIGN THE CONTAINERS IN THE MAIN CONTAINER TO THE END
+ ALIGN CONTENT SPACE BETWEEN IS USED TO GIVE SPACE BETWEEN THE MULTIPLE ROWS IN THE MAIN CONTAINER
+ ALIGN CONTENT SPACE AROUND IS USED TO GIVE SPACE AROUND THE MULTIPLE ROWS IN THE MAIN CONTAINER
+ ALIGN CONTENT SPACE EVENLY IS USED TO GIVE SPACE EVENLY BETWEEN THE CONTAINERS IN THE MAIN CONTAINER
+ ALIGN CONTENT STRETCH IS USED TO STRETCH THE CONTAINERS IN THE MAIN CONTAINER
+ ALIGN CONTENT BASELINE IS USED TO ALIGN THE CONTAINERS IN THE MAIN CONTAINER TO THE BASELINE
+  */
+ #container{
+    width:500px;
+    height: 200px;
+    border: 2px solid rgb(4, 0, 0);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* flex-wrap:wrap-reverse; */
+    /* align-content: center; */
+    /* align-content:flex-start; */
+    /* align-content:center; */
+    /* align-content: space-around; */
+    align-content: space-between;
+ }
+
+ #box1{
+    background-color: rgb(197, 115, 115);
+    border: 2px solid rgb(4, 0, 0);
+    
+ }
+
+ #box2{
+    background-color: rgb(146, 146, 224);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box3{     
+    background-color: rgb(135, 206, 135);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box4{
+    background-color: rgb(234, 234, 132);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box5{
+    background-color: rgb(200, 80, 200);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box6{
+    background-color: rgb(157, 16, 16);
+    border: 2px solid rgb(4, 0, 0);
+ }
+ 
+ #box7{
+    background-color: rgb(131, 51, 184);
+    border: 2px solid rgb(4, 0, 0);
+ }
+ 
+ #box8{
+    background-color: rgb(37, 135, 140);
+    border: 2px solid rgb(4, 0, 0);
+ }
+ 
+ #box9{
+    background-color: rgb(51, 184, 69);
+    border: 2px solid rgb(4, 0, 0);
+ }
+ 
+ #box10{
+    background-color: rgb(224, 224, 27);
+    border: 2px solid rgb(4, 0, 0);
+ }

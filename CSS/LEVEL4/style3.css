@@ -1,0 +1,70 @@
+/* 
+FLEX BOX IS USED TO ARRANGE THE ELEMENTS IN A ROW OR COLUMN IN SINGLE DIV
+FLEX ITEM ARE THE ELEMENTS INSIDE THE FLEX BOX
+FLEX CONTAINER IS THE ELEMENT THAT CONTAINS THE FLEX ITEMS
+MAIN AXIS IS THE AXIS ALONG WHICH THE FLEX ITEMS ARE ARRANGED IN HORIZONTAL OR VERTICAL
+CROSS AXIS IS THE AXIS PERPENDICULAR TO THE MAIN AXIS  IN VERTICAL
+ */
+ body{
+    text-align: center;
+ }
+
+div{
+    width: 50px;
+    height: 20px;
+    border: 1px solid rgb(188, 42, 42);
+    display: inline-block;
+    
+ }
+
+/* WE APPLY FLEX ON PARENT CONTAINER TO MAKE THE FLEX ITEMS FLEXIBLE */
+/* IN JUSTIFY ARRANGEMENT DOESNT GET REVERSED BUT IN FLEX-DIRECTION ARRANGEMENT GETS REVERSED */
+/* flex-direction: column  FROM TOP TO BOTTOM  1 2 3 4 5*/
+    /* flex-direction: col-reverse FROM BOTTOM TO TOP   5 4 3 2 1*/
+    /* flex-start  FROM TOP TO BOTTOM  1 2 3 4 5*/
+    /* flex-end  FROM BOTTOM TO TOP  1 2 3 4 5*/
+    /* center is used to center the flex items in the container */
+    /* space-between is used to space the flex items in the container means use remaining space to give space between the flex items */
+    /* space-around is used to space the flex items in the container means use remaining space to give space between the flex items and also give space before and after the flex items */
+    /* space-evenly is used to space the flex items in the container means use remaining space to give space between the flex items and also give space before and after the flex items */
+ #container{
+    width: 800px;
+    height: 200px;
+    border: 2px solid rgb(4, 0, 0);
+    display: flex;
+    flex-direction: col;
+    /* justify-content: flex-start; */
+    /* justify-content: flex-end; */
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    /* justify-content: space-around; */
+    justify-content: center;
+    
+    
+   
+ }
+
+ #box1{
+    background-color: rgb(197, 115, 115);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box2{
+    background-color: rgb(146, 146, 224);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box3{     
+    background-color: rgb(135, 206, 135);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box4{
+    background-color: rgb(234, 234, 132);
+    border: 2px solid rgb(4, 0, 0);
+ }
+
+ #box5{
+    background-color: rgb(200, 80, 200);
+    border: 2px solid rgb(4, 0, 0);
+ }

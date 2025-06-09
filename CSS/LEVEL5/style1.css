@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 10px 10px 10px 10px;
+}
+
+/* TRANSISITION MEANS MOVING FROM ONE STYLE STATE TO ANOTHER STYLE STATE */
+/* WE APPLIED TRANSISTION PROPERTY TO ONE OF THE ELEMENT  */
+/* ANIMATION IS A TRANSISITION THAT REPEATS */
+/* WITH TRANSISTION PROPERTY WE CAN SLOW OR FAST DOWN THE EFFECT SUCH AS HOVER, CLICK, ETC. */
+
+/*
+TRANSITION-PROPERTY:ALL MEANS ALL THE PROPERTIES OF THE ELEMENT WILL BE TRANSITIONED
+TRANSITION-DURATION:2S MEANS THE TRANSITION WILL TAKE 2 SECONDS FOR HOVER
+TRANSITION-TIMING-FUNCTION:STEPS(5) MEANS THE TRANSITION WILL BE DIVIDED INTO 5 STEPS FOR HOVER
+TRANSITION-DELAY:2S MEANS THE TRANSITION WILL START AFTER 2 SECONDS FOR HOVER
+SHORTHAND transition:property name|duration|timing-function|Delay
+*/
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: white;
+    border: 3px solid black;
+    /* transition-property:all;
+    transition-duration: 2s;
+    transition-timing-function:steps(5);
+    transition-delay: 2s; */
+    /*  */
+    transition:all 2s steps(5) 2s;
+}
+
+div:hover{
+    color: black;
+    font-weight: bold;
+    font-size:50px;
+    background-color: blue;
+    width: 500px;
+}
+
+
+
+
+
+

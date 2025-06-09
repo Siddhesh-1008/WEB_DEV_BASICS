@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: rgb(222, 111, 111);
+}
+
+/* MEDIA QUERY */
+/* WHEN THE SIZE OF THE CONTAINER IS 600PX THEN THE BACKGROUND COLOR OF THE CONTAINER WILL BE GREEN */
+/* @media(width:600px){
+    .container{
+        background-color: rgb(111, 222, 111);
+    }
+}
+
+/* WHEN THE SIZE OF THE CONTAINER IS LESS THAN 600PX THEN THE BACKGROUND COLOR OF THE CONTAINER WILL BE GREEN */
+@media(max-width:600px){
+    .container{
+        background-color: rgb(111, 222, 111);
+    }
+} 
+
+/* WHEN THE SIZE OF THE CONTAINER IS GREATER THAN 600PX THEN THE BACKGROUND COLOR OF THE CONTAINER WILL BE GREEN */
+@media(min-width:600px){
+    .container{
+        background-color: rgb(7, 39, 7);
+    }
+}
+
+/* COMBINED MEDIA QUERY */
+/* WHEN THE SIZE OF THE CONTAINER IS BETWEEN 200PX AND 300PX THEN THE BACKGROUND COLOR OF THE CONTAINER WILL BE PURPLE */
+@media(min-width:200px) and (max-width:300px){
+    .container{
+        background-color: rgb(166, 22, 202);
+    }
+}
